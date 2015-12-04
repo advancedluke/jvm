@@ -110,8 +110,11 @@ Note : Memory 6G 이상 , JDK 1.7.x 이상일 경우 G1 GC 적용 검토 (기존
 ### References
 
 http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/G1GettingStarted/index.html
+
 http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html
+
 http://java.dzone.com/articles/java-8-permgen-metaspace
+
 http://blog.sokolenko.me/2014/11/javavm-options-production.html
 
 ### ThreadDump
