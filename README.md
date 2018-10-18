@@ -96,7 +96,7 @@ Example
 ### G1 GC
 Note : 
 - Memory 6G 이상 , JDK 1.7.x 이상일 경우 사용 가능
-- deduplication 은 JDK 1.8.20 이상부터 적용 가능 ( sting 객제의 중복 제거 기능 )
+- StringDeduplication 은 JDK 1.8.20 이상부터 적용 가능 ( sting 객제의 중복 제거 기능 )
 - Java 9 부터 기본 옵션
 
 ~~~
