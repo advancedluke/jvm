@@ -126,6 +126,9 @@ http://java.dzone.com/articles/java-8-permgen-metaspace
 
 http://blog.sokolenko.me/2014/11/javavm-options-production.html
 
+https://www.dynatrace.com/news/blog/understanding-g1-garbage-collector-java-9/
+
+
 ### ThreadDump
 
 WAS의 행이 의심될 경우에는 thread dump 를 추출하여 쓰레드상의 경합여부 및 속도가 느린 원인을 분석한다.
