@@ -94,12 +94,16 @@ Example
 
 
 ### G1 GC
-Note : Memory 6G 이상 , JDK 1.7.x 이상일 경우 G1 GC 적용 검토 (기존 옵션에 문제가 없으면 그대로 사용 할 것) 
+Note : 
+- Memory 6G 이상 , JDK 1.7.x 이상일 경우 사용 가능
+- deduplication 은 JDK 1.8.20 이상부터 적용 가능 ( sting 객제의 중복 제거 기능 )
+- Java 9 부터 기본 옵션
 
 ~~~
 -server
 -Xms8g -Xmx8g
 -XX:+UseG1GC -XX:MaxGCPauseMillis=200
+-XX:+UseStringDeduplication
 -XX:InitiatingHeapOccupancyPercent=45
 -XX:G1ReservePercent=10
 -verbosegc -XX:+PrintGCDetails -XX:+PrintGCDateStamps 
