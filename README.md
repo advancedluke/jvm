@@ -107,6 +107,7 @@ Note :
 -XX:InitiatingHeapOccupancyPercent=45
 -XX:G1ReservePercent=10
 -verbosegc -XX:+PrintGCDetails -XX:+PrintGCDateStamps 
+-Xlog:gc*=debug
 -Xloggc:/logs/gc.log
 -XX:+HeapDumpOnOutOfMemoryError
 ~~~
