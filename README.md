@@ -104,13 +104,17 @@ Note :
 -Xms8g -Xmx8g
 -XX:+UseG1GC -XX:MaxGCPauseMillis=200
 -XX:+UseStringDeduplication
--XX:InitiatingHeapOccupancyPercent=45
+-XX:+UnlockDiagnosticVMOptions 
+-XX:+G1SummarizeConcMark
+-XX:InitiatingHeapOccupancyPercent=35
 -XX:G1ReservePercent=10
--verbosegc -XX:+PrintGCDetails -XX:+PrintGCDateStamps 
+-verbosegc -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintAdaptiveSizePolicy
 -Xlog:gc*=debug
 -Xloggc:/logs/gc.log
 -XX:+HeapDumpOnOutOfMemoryError
 ~~~
+
+
 
 ### References
 
