@@ -81,8 +81,9 @@ Note : Perm 영역이 Metaspace 영역으로 변경됨
 -Xloggc:/logs/gc.log
 -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=10 -XX:GCLogFileSize=100M
 -XX:+HeapDumpOnOutOfMemoryError
--Djava.rmi.server.hostname=<external IP>
--Dcom.sun.management.jmxremote.port=<port>
+-Djava.rmi.server.hostname=%external.ip%
+-Dcom.sun.management.jmxremote.port=%my.jmx.port%
+-Dcom.sun.management.jmxremote.rmi.port=%my.rmi.port%
 -Dcom.sun.management.jmxremote.authenticate=false
 -Dcom.sun.management.jmxremote.ssl=false
 ~~~
